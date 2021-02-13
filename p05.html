@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='js/react.min.js'></script>
+    <script src='js/react-dom.min.js'></script>
+    <script src='js/browser.min.js'></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>React</title>
+</head>
+
+<body>
+    <div id="example"></div>
+
+    <script type='text/babel'>
+
+        var Comment = React.createClass({
+
+            edit: function() {
+                alert('Editing Comment')
+            },
+
+            remove: function() {
+                alert('Remove Comment')
+            },
+
+            render: function() {
+                return(
+                    <div className='commentContainer'>
+                        <div className='commentText'>{this.props.children}</div>
+                        <button onClick={this.edit} className='button-primary'>Edit</button>
+                        <button onClick={this.remove} className='button-danger'>Remove</button>
+                    </div>
+                );
+            }
+
+        });
+
+        ReactDOM.render
+        (
+            <div className="board">
+                <Comment>I am Teejay</Comment>
+                <Comment>I am Hello</Comment>
+                <Comment>I am World</Comment>
+            </div>,
+            document.getElementById('example')
+        )
+    </script>
+
+</body>
+
+</html>

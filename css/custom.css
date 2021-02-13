@@ -1,0 +1,21 @@
+.commentContainer {
+    width: 40%;
+    background-color: skyblue;
+    margin-right : 16px;
+    margin-left : 16px;
+    margin-top : 24px;
+}
+
+.commentText {
+    display: block;
+    font-size: 16px;
+    margin-left: 16px;
+    margin-top: 24px;
+}
+
+.button-primary {
+    margin-right: 16px;
+    margin-left: 16px;
+    margin-top: 16px;
+    margin-bottom : 24px;
+}
